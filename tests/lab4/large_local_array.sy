@@ -1,0 +1,13 @@
+// Input: None
+// Output: 4096
+
+int main(){
+
+    int a[5050];
+    int b[5050];
+    b[5000] = 0xfff;
+    a[5000] = 1;
+    write(a[5000] + b[5000]);
+
+    return 0;
+}
